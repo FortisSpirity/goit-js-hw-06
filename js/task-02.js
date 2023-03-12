@@ -12,9 +12,8 @@ const ulList = document.querySelector('ul#ingredients');
 const createUlList = (items) => {
   return items.map((item) => {
     const ulItem = document.createElement('li');
-    ulList.appendChild(ulItem);
     ulItem.classList.add('item');
-    ulItem.textContent += item;
+    ulItem.textContent = item;
     return ulItem;
   });
 };
